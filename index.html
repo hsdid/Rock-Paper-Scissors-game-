@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    ,<script src="https://kit.fontawesome.com/3da1a747b2.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <header class="header">
+                <h1>Rock Paper Scissors</h1>
+                <button id="restartBtn">Restart Game</button>
+                
+                <div class="score">
+                <div id="barscore1" class="bar">Player: 0 </div>
+                <div id="barscore2" class="bar">Computer: 0</div>
+                </div>
+            </header>
+        
+            <section id="game">
+                
+                <h2 id="pick">Make your turn</h2>
+                <div class="selection">
+                   
+                    <i id="rock" value="1" class="choice fas fa-hand-rock fa-10x"></i>
+                    
+                    <i id="paper" value="2" class="choice fas fa-hand-paper fa-10x"></i>
+                    
+                    <i id="scissors" value="3" class="choice fas fa-hand-scissors fa-10x"></i>
+                
+                </div>
+
+
+            </section> 
+            
+        </div> 
+        
+        <div class="modal">
+            <div id="result" class="modal-contant">
+                <h1>You win</h1>
+                <i class="fas fa-hand-rock fa-10x"></i>
+                <p>Comouter chose Rock</p>
+            </div>
+        </div>
+    
+    </main>
+    <script src="app.js"></script>
+    <script>
+        const game = new Game();
+        game.init();
+    </script>
+</body>
+
+</html>
